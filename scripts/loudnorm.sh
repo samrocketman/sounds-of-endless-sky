@@ -44,7 +44,7 @@ printf "%*s" "$FIRST_COLUMN" File
 echo ' | Loudnorm (dB) |'
 
 # second row
-echo "| $(dashes "${FIRST_COLUMN}") | $(dashes "${SECOND_COLUMN}") |"
+echo "| $(dashes "${FIRST_COLUMN}") | $(dashes "$(( SECOND_COLUMN - 1 ))"): |"
 
 # following rows
 for x in "$@"; do soundlevel "$x";done
