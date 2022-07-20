@@ -10,7 +10,7 @@ playlist "FW War"
 		not "main plot completed"
 	attributes			# Required system attributes to choose this playlist.
 		"near earth" "dirt belt" "south" "rim"
-	silence 600 10 .2		# Number of seconds to wait between tracks, supporting the negative.
+	silence 600 10 .2			# Number of seconds to wait between tracks, supporting the negative
 						# binomial distribution syntax used for cargo/passengers to allow for randomness.
 	priority 2			# The "tier" which playlists are picked from, where the highest value priority will always be used.
 	weight 30				# Within a given priority "tier", higher weight playlists are more liekly (but not guaranteed) to be chosen.
