@@ -1,4 +1,14 @@
-system Rutilicus
-	music "music/ByAnthrophantasmus/Republic Space"
-planet "New Boston"
-	music "music/ByAnthrophantasmus/Republic Space"
+track "Republic Space"
+	idle "music/ByAnthrophantasmus/Republic Space"
+	combat "music/ByAnthrophantasmus/Republic Space"
+	landing "music/ByAnthrophantasmus/Republic Space"
+
+playlist "Republic Intro"
+	to play
+		has "Intro [0]: active"
+	location
+		government Republic
+	weight 10
+	priority 1
+	tracks linear
+		"Republic Space" 10
