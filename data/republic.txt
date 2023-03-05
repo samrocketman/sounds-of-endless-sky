@@ -1,7 +1,14 @@
 track "Republic Space"
-	idle "music/ByAnthrophantasmus/Republic Space"
 	combat "music/ByAnthrophantasmus/Republic Space"
+	idle "music/ByAnthrophantasmus/Republic Space"
 	landing "music/ByAnthrophantasmus/Republic Space"
+
+track "5 minutes of silence"
+	combat ""
+	idle ""
+	landing ""
+	wait 300
+
 
 # First time tutorial music
 playlist "Republic Intro"
@@ -47,9 +54,6 @@ playlist "Republic Intro"
 				has "Intro [3 Transport]: active"
 				has "Intro [3 Interceptor]: active"
 				has "Intro [3 Freighter]: active"
-	location
-		government Republic
-	weight 10
-	priority 1
-	tracks linear
-		"Republic Space" 10
+	tracks
+		"Republic Space"
+		"5 minutes of silence"
